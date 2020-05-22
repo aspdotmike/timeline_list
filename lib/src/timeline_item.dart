@@ -89,7 +89,7 @@ class TimelineItemLeft extends TimelineItem {
 
   @override
   Widget build(BuildContext context) {
-    final margin = properties.iconSize + TimelineBoxDecoration.LINE_GAP;
+    final margin = properties.iconSize;
     return LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
       return Row(
@@ -106,7 +106,7 @@ class TimelineItemLeft extends TimelineItem {
                   iconBackground: model.iconBackground,
                   properties: properties,
                   timelinePosition: TimelinePosition.Left),
-              width: properties.iconSize,
+              width: properties.iconSize*2,
               alignment: Alignment.center,
               child: icon),
           Container(
